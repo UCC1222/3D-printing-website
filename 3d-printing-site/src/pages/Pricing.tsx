@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar';
+
 import PricingCard from '../components/PricingCard';
 import Footer from '../components/Footer';
 
@@ -23,7 +23,6 @@ const pricingOptions = [
 export default function Pricing() {
   return (
     <div className="bg-black min-h-screen">
-      <Navbar />
       <section className="py-16">
         <h2 className="text-3xl font-bold text-white text-center mb-10">Pricing</h2>
         <div className="flex flex-col md:flex-row justify-center gap-8">

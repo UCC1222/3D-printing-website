@@ -8,15 +8,7 @@ export default function Footer() {
           <div className="text-xl font-bold mb-2">Lucas 3D Printing</div>
           <div className="text-gray-400">One-stop 3D printing service to bring your ideas to life.</div>
         </div>
-        <div>
-          <div className="font-semibold mb-2">Navigation</div>
-          <ul className="space-y-1 text-gray-300">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/prints">Customer Prints</Link></li>
-            <li><Link to="/pricing">Pricing</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </div>
+
       </div>
     </footer>
   );

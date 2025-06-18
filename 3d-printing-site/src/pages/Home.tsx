@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar';
+
 import Hero from '../components/Hero';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
@@ -26,7 +26,6 @@ function WhyChoose() {
 export default function Home() {
   return (
     <div className="bg-black min-h-screen">
-      <Navbar />
       <Hero />
       <Gallery />
       <WhyChoose />
