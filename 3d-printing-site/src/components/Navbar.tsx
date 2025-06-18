@@ -9,15 +9,18 @@ const navItems = [
 
 export default function Navbar() {
   const location = useLocation();
+
   return (
-    <nav className="bg-black text-white px-8 py-4 flex justify-between items-center">
+    <nav className="bg-black text-white px-8 py-4 flex justify-between items-center border-b border-gray-700">
       <div className="text-2xl font-bold">Lucas 3D Printing</div>
       <ul className="flex space-x-8">
         {navItems.map((item) => (
           <li key={item.path}>
             <Link
               to={item.path}
-              className={`hover:text-orange-400 transition-colors duration-200 ${location.pathname === item.path ? 'text-orange-400' : ''}`}
+              className={`hover:text-orange-400 transition-colors duration-200 ${
+                location.pathname === item.path ? 'text-orange-500' : ''
+              }`}
             >
               {item.name}
             </Link>
@@ -26,4 +29,4 @@ export default function Navbar() {
       </ul>
     </nav>
   );
-} 
+}

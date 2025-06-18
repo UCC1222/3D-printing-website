@@ -1,21 +1,27 @@
 export default function Hero() {
   return (
-    <section className="relative h-[550px] md:h-[640px] flex items-center justify-start bg-black">
+    <section className="relative h-[500px] md:h-[600px] flex items-end justify-start bg-black">
+      {/* 背景图 */}
       <img
         src="/images/3d-background.jpg"
         alt="3D printer hero"
-        className="absolute inset-0 w-full h-full object-cover opacity-30"
+        className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="relative z-10 text-left max-w-4xl px-8 md:px-16">
-        <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]">
+
+      {/* 遮罩层 */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* 内容 */}
+      <div className="relative z-10 p-10 md:p-20 text-left max-w-2xl">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-xl">
           Bring Your 3D Ideas to Life
         </h1>
-        <p className="text-white text-lg md:text-2xl mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
+        <p className="text-lg md:text-xl text-white mb-8">
           Custom 3D printing services tailored to your creativity.
         </p>
         <a
           href="#contact"
-          className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md shadow-lg transition"
+          className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition-colors duration-200 shadow-lg"
         >
           Get a Quote
         </a>

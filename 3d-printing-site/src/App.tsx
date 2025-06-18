@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <main className="min-h-screen px-4 py-8">
+      <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/prints" element={<Prints />} />
