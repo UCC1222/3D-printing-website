@@ -1,7 +1,13 @@
+import Navbar from '../components/Navbar';
+import Gallery from '../components/Gallery';
+import Footer from '../components/Footer';
+
 export default function Prints() {
   return (
-    <div className="text-center mt-10">
-      🖼️ This is the Prints gallery page.
+    <div className="bg-black min-h-screen">
+      <Navbar />
+      <Gallery />
+      <Footer />
     </div>
   );
 } 
